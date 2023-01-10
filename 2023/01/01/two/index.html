@@ -396,6 +396,11 @@
             <div id="articleContent">
                 <p>  博客搭建过程用的是hexo框架搭建环境建议使用linux优点操作方便，便于管理托管网站为GitHub。<br>因为需要用到npm，hexo，node，git所以需要先更新，打开liunx命令栏输入:<br> sudo apt update &amp;&amp; upgrate<br>node需要在官网找到合适的Linux版本进行下载，然后是git安装命令：<br>sudo apt-get install git-core<br>安装hexo和npm：<br> npm install -g hexo-cli<br>检查一下<br>hexo -v<br>git -v<br>node -v<br>然后初始化博客输入：<br>hexo init<br>创建一个git仓库<br>你的git名字+.github.io<br>然后创建key链接：<br>ssh-keygen -t rsa -C +输入创建git账户的邮箱<br>生成文件,进入<br>/root/.ssh/<br>找到id_rsa.pub文件打开复制里面的内容在git上进行ssh密钥创建名字乱写内容粘贴你复制的东西<br>建立key<br>你可以先cd进入你创建的博客文件根目录然后使用hexo s创建一个本地的博客端口这时它会给你一个网址<br><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a><br>进入后就可以看到了。<br>然后进入config.yml文件夹<br>滑到最下面输入<br>deploy:<br>  type: git<br>  repo: 你git创建的仓库ssh链接<br>  branch: main<br>输入完wp保存退出之后cd进入博客根目录输入<br>hexo c<br>hexo g<br>hexo d<br>这样就创建好了一个属于你的专属静态博客</p>
 <hr>
+<p>tags:</p>
+<ul>
+<li>hexo</li>
+</ul>
+<hr>
 
                 
             </div>

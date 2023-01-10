@@ -21,7 +21,7 @@
       <link href="/2023/01/01/two/"/>
       <url>/2023/01/01/two/</url>
       
-        <content type="html"><![CDATA[<p>  博客搭建过程用的是hexo框架搭建环境建议使用linux优点操作方便，便于管理托管网站为GitHub。<br>因为需要用到npm，hexo，node，git所以需要先更新，打开liunx命令栏输入:<br> sudo apt update &amp;&amp; upgrate<br>node需要在官网找到合适的Linux版本进行下载，然后是git安装命令：<br>sudo apt-get install git-core<br>安装hexo和npm：<br> npm install -g hexo-cli<br>检查一下<br>hexo -v<br>git -v<br>node -v<br>然后初始化博客输入：<br>hexo init<br>创建一个git仓库<br>你的git名字+.github.io<br>然后创建key链接：<br>ssh-keygen -t rsa -C +输入创建git账户的邮箱<br>生成文件,进入<br>/root/.ssh/<br>找到id_rsa.pub文件打开复制里面的内容在git上进行ssh密钥创建名字乱写内容粘贴你复制的东西<br>建立key<br>你可以先cd进入你创建的博客文件根目录然后使用hexo s创建一个本地的博客端口这时它会给你一个网址<br><a href="http://localhost:4000/">http://localhost:4000</a><br>进入后就可以看到了。<br>然后进入config.yml文件夹<br>滑到最下面输入<br>deploy:<br>  type: git<br>  repo: 你git创建的仓库ssh链接<br>  branch: main<br>输入完wp保存退出之后cd进入博客根目录输入<br>hexo c<br>hexo g<br>hexo d<br>这样就创建好了一个属于你的专属静态博客</p><hr>]]></content>
+        <content type="html"><![CDATA[<p>  博客搭建过程用的是hexo框架搭建环境建议使用linux优点操作方便，便于管理托管网站为GitHub。<br>因为需要用到npm，hexo，node，git所以需要先更新，打开liunx命令栏输入:<br> sudo apt update &amp;&amp; upgrate<br>node需要在官网找到合适的Linux版本进行下载，然后是git安装命令：<br>sudo apt-get install git-core<br>安装hexo和npm：<br> npm install -g hexo-cli<br>检查一下<br>hexo -v<br>git -v<br>node -v<br>然后初始化博客输入：<br>hexo init<br>创建一个git仓库<br>你的git名字+.github.io<br>然后创建key链接：<br>ssh-keygen -t rsa -C +输入创建git账户的邮箱<br>生成文件,进入<br>/root/.ssh/<br>找到id_rsa.pub文件打开复制里面的内容在git上进行ssh密钥创建名字乱写内容粘贴你复制的东西<br>建立key<br>你可以先cd进入你创建的博客文件根目录然后使用hexo s创建一个本地的博客端口这时它会给你一个网址<br><a href="http://localhost:4000/">http://localhost:4000</a><br>进入后就可以看到了。<br>然后进入config.yml文件夹<br>滑到最下面输入<br>deploy:<br>  type: git<br>  repo: 你git创建的仓库ssh链接<br>  branch: main<br>输入完wp保存退出之后cd进入博客根目录输入<br>hexo c<br>hexo g<br>hexo d<br>这样就创建好了一个属于你的专属静态博客</p><hr><p>tags:</p><ul><li>hexo</li></ul><hr>]]></content>
       
       
       
@@ -34,20 +34,7 @@
       <link href="/2022/12/29/one/"/>
       <url>/2022/12/29/one/</url>
       
-        <content type="html"><![CDATA[<p>在寒冷的冬天零下5摄氏度的外面，而在家里我正在洗一个热水澡正在我十分享受之时热水器给我开了<br>玩笑。它没有热水了而那时的我反应过来却已经为时已晚，无情的冷水仿佛在宣告它的主权在冬天<br>就应该洗凉水澡，我惊恐万分就在我不知所措之时，幸好我的浴霸给我一点缓和的余地使我坚持洗完<br>了凉水澡，不过有一说一洗凉水澡虽然很痛苦但是洗完后的一天是神清气爽，但是一定要注意保暖<br>不然会感冒我在洗完后做了几十个深蹲才缓过来实在是太痛苦了。</p><hr><h2 id="tags"><a href="#tags" class="headerlink" title="tags "></a>tags </h2>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2022/12/29/hello-world/"/>
-      <url>/2022/12/29/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>在寒冷的冬天零下5摄氏度的外面，而在家里我正在洗一个热水澡正在我十分享受之时热水器给我开了<br>玩笑。它没有热水了而那时的我反应过来却已经为时已晚，无情的冷水仿佛在宣告它的主权在冬天<br>就应该洗凉水澡，我惊恐万分就在我不知所措之时，幸好我的浴霸给我一点缓和的余地使我坚持洗完<br>了凉水澡，不过有一说一洗凉水澡虽然很痛苦但是洗完后的一天是神清气爽，但是一定要注意保暖<br>不然会感冒我在洗完后做了几十个深蹲才缓过来实在是太痛苦了。</p><hr><p>categories: 生活<br>tags </p><ul><li>日常</li></ul><hr>]]></content>
       
       
       
